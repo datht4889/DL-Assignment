@@ -1,27 +1,16 @@
-from torchsummary import summary
-from torchgeometry.losses import one_hot
 import os
 import pandas as pd
 import numpy as np
 from PIL import Image
 import cv2
-import time
-import imageio
-import matplotlib.pyplot as plt
-import time
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.optim import lr_scheduler
 from torch import Tensor
 from torch.utils.data import Dataset, DataLoader, random_split
 from torchvision.transforms import Resize, PILToTensor, ToPILImage, Compose, InterpolationMode
-import torchvision.transforms.v2.functional as TF
 from collections import OrderedDict
-import wandb
-import sys
-import torchvision
 from torchvision.models import resnet18
 
 def Conv(in_channels, out_channels, kernel, padding):
