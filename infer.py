@@ -201,7 +201,7 @@ def main():
     df = pd.DataFrame(columns=['Id', 'Expected'])
     df['Id'] = res['ids']
     df['Expected'] = res['strings']
-    df.to_csv(r'output.csv', index=False)
+    df.to_csv(r'/kaggle/working/output.csv', index=False)
 
 if __name__ == '__main__':
     main()
