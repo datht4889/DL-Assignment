@@ -10,5 +10,5 @@
 ## Inference
 
 ```bash
-!python infer.py path/to/TestSet
+!python infer.py
 ```
